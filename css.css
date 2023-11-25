@@ -2,23 +2,47 @@
     margin: 0 auto;
     padding: 0;
     font-family: "Petrov Sans-Trial", sans-serif;
-}
-
-body {
-    background: url('pipi.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
+    box-sizing: border-box;
 }
 
 header {
-    padding: 5px;
-    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(0.625rem);
+    padding: 10px 10%;
+    border-bottom: 1px solid rgb(255, 255, 255, .1);
+}
+
+li, a {
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all .3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #dcd8d8;
 }
 
 .logo {
     color: white;
-    font-size: 19px;
-    text-align: center;
+    font-size: 21px;
 }
 
 section {
@@ -27,6 +51,9 @@ section {
     align-items: center;
     min-height: 100vh;
     width: 100%;
+    background: url('123.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .form-box {
@@ -40,7 +67,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 h2 {
@@ -125,6 +151,11 @@ button {
     font-weight: 600;
 }
 
+button:hover {
+    background: #cbc6c6;
+    transition: all .3s ease 0s;
+}
+
 .register {
     font-size: .9em;
     color: #fff;
@@ -140,4 +171,12 @@ button {
 
 .register p a:hover {
     text-decoration: underline;
+}
+
+.footer-value {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 30px;
+    background: transparent;
 }
